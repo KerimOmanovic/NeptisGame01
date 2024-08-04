@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    >
+
+    <TextView
+
+        android:id="@+id/recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Recipe Name"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/answer_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:layout_below="@id/recipe_name"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/answer_field"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="17"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0 vs 0"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/send_button"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/attempts_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempt: 1/10"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/score"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
